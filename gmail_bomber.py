@@ -109,7 +109,7 @@ class AnimasyonluArayuz:
         bos = genislik - dolu
         
         # Yeni renk sistemi
-        if yuzde >= 90:
+        if yuzde >= 85:
             renk = Fore.GREEN      # Tamamlandı
         elif yuzde >= 50:
             renk = Fore.YELLOW     # Orta
@@ -130,8 +130,8 @@ class UltraEmailBomber:
         self.lock = threading.Lock()
         self.dlogger = DetailedLogger()
         self.ui = AnimasyonluArayuz()
-        print(Fore.CYAN + pyfiglet.figlet_format("ULTRA BOMBER", font="slant"))
-        print(Style.BRIGHT + "\nGmail Bomber - Kaliteli Gönderim Modu\n")
+        print(Fore.CYAN + pyfiglet.figlet_format("VASTREL MAİL", font="slant"))
+        print(Style.BRIGHT + "\nVastrel Gmail Bomber - Bizi Tercih Ettiğiniz İçin Teşekkürler\n")
 
     def create_message(self, sender, target, message, subject):
         msg = MIMEMultipart()
